@@ -1,0 +1,50 @@
+   
+        body {
+            display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            height: 100vh; /* Toma el 100% de la altura de la ventana (viewport height) */
+            margin: 0;
+            
+        }
+.contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+.formulario {
+    display: flex;
+    flex-direction: column; /* Coloca elementos en una columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    width: 40%;
+    padding: 30px;
+    box-sizing: border-box;
+    float: left;
+}
+
+/* Estilo opcional para los input y button */
+.formulario input,.formulario button {
+    margin: 5px; /* Añade espacio entre elementos */
+}
+
+
+.main{
+    width: 70%;
+    background: #fff;
+    padding: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+   
+.main img{
+    width: 100%;
+    height: auto;
+}
+     
+
+
+
