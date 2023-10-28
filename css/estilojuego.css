@@ -1,0 +1,8 @@
+body{
+    display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Toma el 100% de la altura de la ventana (viewport height) */
+    margin: 0;
+        background-image: url('../imagenes/fondo.jpg');
+}

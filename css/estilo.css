@@ -5,6 +5,7 @@
             align-items: center; /* Centra verticalmente */
             height: 100vh; /* Toma el 100% de la altura de la ventana (viewport height) */
             margin: 0;
+            background-image: url('../imagenes/fondo.jpg');
         }
 .contenedor{
     width: 80%;
@@ -30,10 +31,12 @@
     margin: 5px; /* Añade espacio entre elementos */
 }
 
+#Principal{
+    background-image: url('../imagenes/background_login.png');
+}
 
 .main{
     width: 70%;
-    background: #fff;
     padding: 20px;
     float: left;
     box-sizing: border-box;

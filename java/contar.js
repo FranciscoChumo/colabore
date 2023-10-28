@@ -1,22 +1,36 @@
+let cantidadJugadores = 0;
+let jugadores = [];
 
-// Obtén una referencia al botón y al elemento donde mostrarás el contador.
-    var contarBoton = document.getElementById("contarBoton");
-    var contador = document.getElementById("contador");
-    var contar=0;
-
-    // Agrega un controlador de eventos al botón para contar elementos y mostrar el resultado.
-    contarBoton.onclick = function(){
-        contar++;
-        contador.textContent=contar;
-        // Actualiza el contenido del elemento de contador con la cantidad de elementos encontrados.
-        contador.textContent = elementos.length;
-    };
- // Agrega un controlador de eventos para el envío del formulario
- document.getElementById("For-Registro").addEventListener("submit", function(event) {
-    // Evita que se envíe el formulario de manera predeterminada
-    event.preventDefault();
     
-    // Limpia el valor del campo de entrada
-    document.getElementById("Nombres","Apellidos").value = "";
-});
+function mostrarFormularioNombres() {
+
+    document.getElementById('jugadoresForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+    cantidadJugadores = parseInt(document.getElementById('cantidadJugadores').value, 6);
+
+    if (cantidadJugadores > 0) {
+        const nombresInput = document.getElementById('nombresInput');
+        nombresInput.innerHTML = '';
+
+        for (let i = 1; i <= cantidadJugadores; i++) {
+            nombresInput.innerHTML += `<input type="text" placeholder="Nombre del jugador ${i}" required><br>`;
+        }
+
+        document.getElementById('seleccionarJugadores').style.display = 'none';
+        document.getElementById('ingresarNombres').style.display = 'block';
+
+    }
+    });
+}
+function iniciarJuego() {
+    nombresForm = document.getElementById('nombresForm');
+    const inputs = nombresForm.getElementsByTagName('input');
+
+    for (let i = 0; i < cantidadJugadores; i++) {
+        jugadores.push(inputs[i].value);
+    }
+    window.location.href = "index.html"+encodeURIComponent(JSON.stringify(jugadores));
+}
+       
+
 
