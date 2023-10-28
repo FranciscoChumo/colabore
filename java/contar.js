@@ -29,8 +29,10 @@ function iniciarJuego() {
     for (let i = 0; i < cantidadJugadores; i++) {
         jugadores.push(inputs[i].value);
     }
-    window.location.href = "index.html"+encodeURIComponent(JSON.stringify(jugadores));
+    window.location.href="index.html";
+    //window.location.href = "index.html"+encodeURIComponent(JSON.stringify(jugadores));
 }
+
        
 
 

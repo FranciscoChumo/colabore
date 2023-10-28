@@ -36,4 +36,6 @@ const urlParams = new URLSearchParams(window.Location.URLSearchParams);
 
         // Agregar manejador de eventos al botón de repartir cartas
         document.getElementById('repartirCartas').addEventListener('click', repartirCartas);
-    
+      function regre(){
+        window.location.href="pagina2.html";
+      }
