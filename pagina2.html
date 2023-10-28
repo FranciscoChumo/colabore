@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/estiloregi.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <H6>
-        AQUÍ VA EL REGISTRO
-    </H6>
-    <a href="login.html">volver</a> <br>
-    <a href="index.html">juego</a>
+
+    <form class="For-Registro">
+        <h1>Registro</h1>
+       <input type="text" name="Nombres" id="Nombres" placeholder="Ingrese su Nombre">
+       <input type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese su Apellido">
+       <button type="submit" id="contarBoton">Register!</button>
+         <p id="contador">0</p>
+   
+         <a href="login.html">volver</a>
+         <a href="index.html">juego</a>
+    </form>
+   
+    <script src="java/contar.js"></script>
 </body>
 </html>
