@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.For-Registro{
+background: #24303c;
+margin: auto;
+margin-top: 100px;
+display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
+justify-content: center; /* Centra horizontalmente */
+align-items: center; /* Centra verticalmente */
+flex-direction: column; /* Coloca elementos en una columna */
+font-family: 'calibri';
+color: white;
+box-shadow: 7px 13px 37px #000;
+width: 40%;
+padding: 30px;
+box-sizing: border-box;
+float: left;
+}
+.For-Registro input,.formulario button {
+    margin: 5px; /* Añade espacio entre elementos */
+}
+
+.For-Registro h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+body{
+    display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Toma el 100% de la altura de la ventana (viewport height) */
+    margin: 0;
+        background-image: url('../imagenes/fondo.jpg');
+}
+
+button{
+  font-size: 13px;
+  font-weight: 10;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow',
+   Arial, sans-serif;
+  margin: 1px;
+  border: none ;
+  background-color: tomato;
+  padding: 15px;
+  border-radius: 5px;
+}
+button:hover{
+    background-color: brown;
+}
+.For-Registro p{
+    color: rgb(228, 4, 4);
+}

@@ -5,7 +5,6 @@
             align-items: center; /* Centra verticalmente */
             height: 100vh; /* Toma el 100% de la altura de la ventana (viewport height) */
             margin: 0;
-            
         }
 .contenedor{
     width: 80%;
