@@ -7,30 +7,26 @@
     <link rel="stylesheet" href="css/estiloregi.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-
-    <div id="seleccionarJugadores">
+<body>  
+   
+    <div class="For-Registro" id="seleccionarJugadores">
         <br><h2>Seleccionar Jugadores</h2></br>
         <form id="jugadoresForm">
             <label for="cantidadJugadores">Número de jugadores:</label>
             <input type="number" id="cantidadJugadores" min="1" max="4" required>
            <br><button onclick="mostrarFormularioNombres()">Continuar</button></br>
         </form>
+        <a href="login.html"><img src="">volver</a> <br>
     </div>
 
-    <div id="ingresarNombres" style="display: none;">
+    <div class="IngreNombre" id="ingresarNombres" style="display: none;">
         <h2>Ingresar Nombres de Jugadores</h2>
-        <form id="nombresForm">
+        <form class="Registro" id="nombresForm">
             <div id="nombresInput">
             </div>
             <button onclick="iniciarJuego()">Iniciar Juego</button>
         </form>
     </div>
-    <div class="comeback">
-        <a href="login.html"><img src="">volver</a> <br>
-       
-    </div>
     <script src="java/contar.js"></script>
-    
 </body>
 </html>

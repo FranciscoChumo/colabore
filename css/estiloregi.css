@@ -6,7 +6,7 @@
 .For-Registro{
 background: #24303c;
 margin: auto;
-margin-top: 100px;
+margin-top: 150px;
 display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
 justify-content: center; /* Centra horizontalmente */
 align-items: center; /* Centra verticalmente */
@@ -14,18 +14,16 @@ flex-direction: column; /* Coloca elementos en una columna */
 font-family: 'calibri';
 color: white;
 box-shadow: 7px 13px 37px #000;
-width: 40%;
-padding: 30px;
+width: 45%;
+padding: 25px;
 box-sizing: border-box;
 float: left;
 }
 .For-Registro input,.formulario button {
-    margin: 5px; /* Añade espacio entre elementos */
+    margin: 8px; /* Añade espacio entre elementos */
 }
-
-.For-Registro h1{
-    font-size: 30px;
-    margin-bottom: 20px;
+.For-Registro a{
+    color: gold;
 }
 body{
     display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
@@ -33,7 +31,7 @@ body{
     align-items: center; /* Centra verticalmente */
     height: 100vh; /* Toma el 100% de la altura de la ventana (viewport height) */
     margin: 0;
-        background-image: url('../imagenes/fondo.jpg');
+    background-image: url('../imagenes/fondo.jpg');
 }
 
 button{
@@ -50,6 +48,35 @@ button{
 button:hover{
     background-color: brown;
 }
-.For-Registro p{
-    color: rgb(228, 4, 4);
+.IngreNombre{
+    background: #24303c;
+    margin: auto;
+    margin-top: 150px;
+    display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Coloca elementos en una columna */
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    width: 45%;
+    padding: 25px;
+    box-sizing: border-box;
+    float: left;
+}
+.IngreNombre h2{
+    display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Coloca elementos en una columna */
+}
+.Registro{
+    display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Coloca elementos en una columna */
+   
+}
+.Registro button{
+     margin: 8px;
 }
